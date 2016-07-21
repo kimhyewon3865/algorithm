@@ -1,0 +1,24 @@
+Access Level
+
+- Public
+    - enables entities to be used within any source file from their defining module, and also in a source file from another module that imports the defining module. You typically use public access when specifying the public interface to a framework.
+- Interal
+    - enabes entities to be used within any source file from their defining module, but not in any source file outside of that module. You typically use internal access when defining an app’s or a framework’s internal structure.
+- Private
+    - restricts the use of an entity to its own defining source file. Use private access to hide the implementation details of a specific piece of functionality
+    
+    
+map
+
+  특정 Array 나 Dictionary를 기준으로 다른 Array를 만들어 낼 때 사용한다
+  원형: Array.map(transform: T -> U)
+  map은 배열을 검토해서 정리할 때 활용된다
+
+let values = [1, 2, 3, 4, 5]
+
+let valueStrings = values.map({ (v: Int) -> (String) in
+    return "\(v)"
+})
+
+println(valueStrings)
+// 콘솔에 ["1", "2", "3", "4", "5"] 가 출력된다.
