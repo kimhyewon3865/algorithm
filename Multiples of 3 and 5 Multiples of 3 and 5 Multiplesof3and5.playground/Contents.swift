@@ -16,7 +16,6 @@ import UIKit
 
 
 var totalArr = [Int]()
-totalArr = Array(1...9).filter { number in number % 3 == 0 || number % 5 == 0 }
+totalArr = Array(1..<1000).filter { number in number % 3 == 0 || number % 5 == 0 }
 var total = totalArr.reduce(0) { total, number in total + number}
-print(totalArr)
 print(total)
