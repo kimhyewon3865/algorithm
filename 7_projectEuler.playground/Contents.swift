@@ -7,26 +7,30 @@
  */
 import UIKit
 
-func isPrime(n: Int) -> Bool {
-    var sq = Int(sqrt(Double(n)))
-    if sq > 2 {
-        for i in 2...sq {
-            if n % i == 0 {
-                return false
+extension Int {
+    
+    func isPrime() -> Bool {
+        let sq = Int(sqrt(Double(self)))
+
+        if self < 2 { return false }
+        
+        if sq > 2 {
+            for i in 2...sq {
+                if self % i == 0 { return false }
             }
         }
+        
+        return true
     }
-    return true
 }
 
-
-func getPrimeNum(find: Int) -> Int {
+func getPrimeNum(at: Int) -> Int {
     var index = 1
     var n = 1
     
-    while index < find {
-        n = n + 2
-        if isPrime(n: n) { index += 1 }
+    while index < at {
+        n += 2
+        if n.isPrime() { index += 1 }
     }
     
     return n
@@ -38,6 +42,4 @@ func getPrimeNum(find: Int) -> Int {
 
 /*
 1 3 7 9 로 끝나는것중안나뉘는것
-i % 2 != 0 
-
  */
