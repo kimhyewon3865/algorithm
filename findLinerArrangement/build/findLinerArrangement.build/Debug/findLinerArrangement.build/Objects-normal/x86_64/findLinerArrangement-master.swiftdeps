@@ -1,0 +1,5 @@
+version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
+options: "d9ffb0b36a03a9f46ffebcc80f33262b"
+build_time: [544115707, 730897000]
+inputs:
+  "/Users/kimhyewon/Documents/algorithm/findLinerArrangement/findLinerArrangement/main.swift": [544115707, 0]
