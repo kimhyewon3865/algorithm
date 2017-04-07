@@ -1,0 +1,5 @@
+version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
+options: "684ad6b1fd7e8686cd9637c2727afb51"
+build_time: [544117311, 687761000]
+inputs:
+  "/Users/kimhyewon/Documents/algorithm/findMazePath/findMazePath/main.swift": [544117311, 0]
