@@ -1,0 +1,5 @@
+version: "Apple Swift version 3.1 (swiftlang-802.0.53 clang-802.0.42)"
+options: "e978c743be5f0579d4f3b04e97549508"
+build_time: [546508412, 669555000]
+inputs:
+  "/Users/kimhyewon/Documents/algorithm/8_projectEuler/8_projectEuler/main.swift": [546508412, 0]
